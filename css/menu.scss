@@ -47,11 +47,9 @@ a {
 
     .menu {
         max-height: 0;
-        transition: max-height .2s ease-out;
+        transition: max-height .5s ease-out;
     }
-    .menu-btn {
-        display: none;
-    }
+    
     .menu-icon {
         display: inline-block;
         padding: 28px 20px;
@@ -85,4 +83,35 @@ a {
             }
         }
     }
+
+    .menu-btn {
+        display: none;
+    // Use sibling selector to target menu on checkbox checked.
+
+        &:checked ~{
+            .menu {
+                max-height: 500px;
+
+            }
+
+            .logo-wrap {
+                .nav-icon {
+                    background: transparent;
+
+                    &:before {
+                        transform: rotate(-45deg);
+                        top: auto;
+                    }
+
+                    &:after {
+                        transform: rotate(45deg);
+                        bottom: auto;
+                    }
+
+                }
+            }
+        }
+    }
+
+
 }

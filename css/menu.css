@@ -61,12 +61,8 @@ a {
 
 .header .menu {
   max-height: 0;
-  -webkit-transition: max-height .2s ease-out;
-  transition: max-height .2s ease-out;
-}
-
-.header .menu-btn {
-  display: none;
+  -webkit-transition: max-height .5s ease-out;
+  transition: max-height .5s ease-out;
 }
 
 .header .menu-icon {
@@ -102,5 +98,29 @@ a {
 
 .header .menu-icon .nav-icon:after {
   bottom: 10px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 500px;
+}
+
+.header .menu-btn:checked ~ .logo-wrap .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .logo-wrap .nav-icon:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: auto;
+}
+
+.header .menu-btn:checked ~ .logo-wrap .nav-icon:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: auto;
 }
 /*# sourceMappingURL=menu.css.map */
