@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Menu with Pure CSS | Kamal Ahmed</title>
-    <link rel="stylesheet" href="css/menu.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <body>
     <header class="header">
+      <div class="logo-wrap">
         <a href="/" class="logo">Kamal Ahmed</a>
-        <input type="checkbox" id="menu-btn" class="menu-btn">
-        <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
 
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
+        <div class="mobile-menu-toggle">
+          <input type="checkbox" id="menu-btn" class="menu-btn" />
+          <label for="menu-btn" class="menu-icon"
+            ><span class="nav-icon"></span
+          ></label>
+        </div>
+      </div>
+
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
     </header>
-</body>
+  </body>
 </html>
