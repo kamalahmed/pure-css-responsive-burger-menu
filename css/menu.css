@@ -13,6 +13,7 @@ body {
 
 a {
   color: #000;
+  text-decoration: none;
 }
 
 .header {
@@ -41,7 +42,15 @@ a {
 }
 
 .header ul a:hover {
+  color: #fff;
   background-color: #ffc107;
+  border-color: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.header ul a.active {
+  color: #fff;
+  background-color: #ffc107;
+  border-color: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .header .logo-wrap {
@@ -122,5 +131,33 @@ a {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   bottom: auto;
+}
+
+@media (min-width: 48em) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header .menu {
+    min-height: 58px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .menu a {
+    border-bottom: none;
+    border-right: 1px solid #ccc;
+  }
 }
 /*# sourceMappingURL=menu.css.map */
